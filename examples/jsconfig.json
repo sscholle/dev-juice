@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    // "target": "es5",
+    // "allowSyntheticDefaultImports": false,
+    "baseUrl": "./resources/assets/js",
+
+  },
+  "exclude": [
+      "node_modules",
+      "public",
+  ],
+}
