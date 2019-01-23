@@ -195,3 +195,16 @@ Note: This config will work along with your `editorconfig.js` for automatically 
   }
 }
 ```
+
+## Global Git Config
+- File: ~/.gitconfig
+- Configuration:
+```
+[core]
+	excludesfile = /Users/seb/.gitignore_global
+	editor = code --wait
+...
+```
+
+### Description
+`editor` defines the app to use when marking commits for an interactive rebase, in this case 'code' references VS Code app.

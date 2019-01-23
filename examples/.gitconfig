@@ -1,0 +1,14 @@
+[core]
+	excludesfile = /Users/seb/.gitignore_global
+	editor = code --wait
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Sebastian Scholle
+	email = sscholle@gmail.com
+[commit]
+	template = /Users/seb/.stCommitMsg
