@@ -197,7 +197,7 @@ Note: This config will work along with your `editorconfig.js` for automatically 
 ```
 
 ## Global Git Config
-- File: ~/.gitconfig
+- File: `~/.gitconfig`
 - Configuration:
 ```
 [core]
@@ -208,3 +208,34 @@ Note: This config will work along with your `editorconfig.js` for automatically 
 
 ### Description
 `editor` defines the app to use when marking commits for an interactive rebase, in this case 'code' references VS Code app.
+
+## Babel RC
+- Node Module: Babel
+- Configuration File: `.babelrc`
+- Example Configuration:
+```
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "Chrome >= 52",
+          "FireFox >= 44",
+          "Safari >= 7",
+          "Explorer 11",
+          "last 4 Edge versions",
+        ]
+      },
+      "modules": false,
+      "useBuiltIns": true
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": ["transform-object-rest-spread", "syntax-async-functions", "transform-regenerator", "flow-react-proptypes", "transform-flow-strip-types"]
+}
+```
+
+### Description
+`env` preset is reccomended as it is environment adaptive
+Note that this is based on an older non-reccomended config

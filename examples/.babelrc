@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "Chrome >= 52",
+          "FireFox >= 44",
+          "Safari >= 7",
+          "Explorer 11",
+          "last 4 Edge versions",
+        ]
+      },
+      "modules": false,
+      "useBuiltIns": true
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": ["transform-object-rest-spread", "syntax-async-functions", "transform-regenerator", "flow-react-proptypes", "transform-flow-strip-types"]
+}
